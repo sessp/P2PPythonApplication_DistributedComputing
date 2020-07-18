@@ -1,0 +1,20 @@
+﻿<Window x:Class="ClientApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Closing="W_Closing">
+    <Grid>
+        <TextBox x:Name="pythonInput" HorizontalAlignment="Left" Height="210" Margin="26,46,0,0" TextWrapping="Wrap" Text="Insert Python Here" VerticalAlignment="Top" Width="295"/>
+        <Button x:Name="runButton" Content="Run Python" HorizontalAlignment="Left" Margin="26,270,0,0" VerticalAlignment="Top" Width="295" Click="Run_Click" Height="61"/>
+        <Label Content="Background Job:" HorizontalAlignment="Left" Margin="446,46,0,0" VerticalAlignment="Top"/>
+        <Label Content="Number of Jobs Completed: " HorizontalAlignment="Left" Margin="391,72,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="currentJobField" HorizontalAlignment="Left" Margin="567,51,0,0" TextWrapping="Wrap" Text="Unknown" VerticalAlignment="Top"/>
+        <TextBlock x:Name="jobCompletedField" HorizontalAlignment="Left" Margin="586,77,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <Button x:Name="createServerButton" Content="Start Program" HorizontalAlignment="Left" Margin="26,336,0,0" VerticalAlignment="Top" Width="295" Click="createServerButton_Click" Height="57"/>
+        <ListBox x:Name="scoreboard" HorizontalAlignment="Left" Height="249" Margin="418,129,0,0" VerticalAlignment="Top" Width="254"/>
+    </Grid>
+</Window>
